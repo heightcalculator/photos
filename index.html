@@ -1,0 +1,276 @@
+<style>
+    /* This and other handwriting fonts can be found on https://fonts.aarushmagic.com */
+    @font-face {
+        font-family: 'Aarush';
+        src: url('https://fonts.aarushmagic.com/fonts/Aarush-Regular.ttf');
+    }
+
+    body {
+        margin: none;
+        text-align: center;
+        background-color: rgb(51, 49, 49);
+        cursor: url("Untitled drawing (1) (1).svg") 12 12, auto;
+    }
+
+    h1 {
+        padding-top: 30px;
+        font-size: min(max(70px, 7vw), 60px);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: beige;
+    }
+
+    .main {
+        min-height: 20vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .album {
+        flex: 0;
+        border-radius: 10%;
+        height: 35vh;
+        max-width: 90vw;
+        aspect-ratio: 4/3 auto;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .count {
+        position: absolute;
+        right: 3vh
+    }
+
+    .count p {
+        font-size: 1.5vh;
+        color: antiquewhite;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 7px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        aspect-ratio: inherit;
+    }
+
+    .hover {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 10%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .hover p {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+    }
+
+    .hover .imgtitle {
+        margin-top: 14vh;
+        font-size: 6vh;
+    }
+
+    .hover .imgdescription {
+        display: none;
+        font-family: "Aarush";
+    }
+
+    .hover:hover .imgtitle {
+        margin-top: 11vh;
+        font-size: 5.7vh;
+    }
+
+    .hover:hover .imgdescription {
+        display: block;
+        margin-top: 19vh;
+        font-size: 3vh;
+        font-weight: 600;
+        line-height: 3.7vh;
+    }
+
+    .hover:hover {
+        background-color: rgba(0, 0, 0, 0.40);
+        cursor: grab;
+    }
+</style>
+
+<body>
+    <h1>Aarush's Photos</h1>
+    <div class="main">
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczOyzZycoWjFf2wGtS-yiD5mXZCoY2Mbd5P-ALzojhD5GACsvMPjsXZT-Ua9rOor1O0S0Ur9UZKSITT9cZgUiYvAKKQgKs1M9jXv0xx6YEJrGPu0JQ7z">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/college')">
+                <p class="imgtitle">
+                    Georgia Tech
+                </p>
+                <p class="imgdescription">
+                    Go Jackets!
+                </p>
+            </div>
+            <div class="count">
+                <p>IP</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczMAusfcVuGvI9vvG4ieAzZ4jhuHrXdlNeiLZbc13qeXGNCvEGq6_YEseJURrf9L2y3lZ4fiLaMknOZSbpV-6_1IRa5d4iWhza0EVg9v62e8yzJS5MiD=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/college/WoW')">
+                <p class="imgtitle">
+                    GA Tech WoW
+                </p>
+                <p class="imgdescription">
+                    GO JACKETS!
+                </p>
+            </div>
+            <div class="count">
+                <p>26</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczN7Ao6rNPo6dGv2L4FrJsI7i-BeID8megQAmOT3NAtZdp11jIqD2vsJp_FA_FU9q4ru2MJdaMCNTKgH10VIa6tSC2z9ot9C5AB7NwFeEqOWBWXvcXVP=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/highschool')">
+                <p class="imgtitle">
+                    Dunwoody HS
+                </p>
+                <p class="imgdescription">
+                    4 years of highschool...<br>A lifetime of memories...
+                </p>
+            </div>
+            <div class="count">
+                <p>100</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczOF8J27ERbh57N-CY0_4x8M2ljyLsdiI-4Dk2M9L0BTr6kjJW7pWS3wewUHe61J88br3TIl8TMtT9FRNN6uoyMAX_ExN0_H1wFR1ZKXnzy0Vz2a4evr">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/cruise/vista23')">
+                <p class="imgtitle">
+                    Vista 2023
+                </p>
+                <p class="imgdescription">
+                    Carnival cruise in the Caribbean
+                </p>
+            </div>
+            <div class="count">
+                <p>184</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczPBgmDDtvnL6Jvjp6Z4vyYxXvgRcgG5iP8707qDOeSEpX09A4Cb8elw6Ktf395uhDe6QXbL9d0G4BSQn5242TOWbD2Kl53BrAaDF9ctB80hT9zFnwk=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/cruise/horizon23')">
+                <p class="imgtitle">
+                    Horizon 2023
+                </p>
+                <p class="imgdescription">
+                    Carnival cruise in the Caribbean
+                </p>
+            </div>
+            <div class="count">
+                <p>211</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczMP3U0Qgx0t5V4i7QtJMXi3W8hFNLjUARYjnTx7vdim3ZuyB_M3Jp-DrVXCTz7nXb5ahgyY1nAcM-uAj56yS7s4xPM2M2lvcMPOCxpN2Vc2wIJE=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/cruise/reflection22')">
+                <p class="imgtitle">
+                    Reflection 2022
+                </p>
+                <p class="imgdescription">
+                    Celebrity cruise in the Caribbean
+                </p>
+            </div>
+            <div class="count">
+                <p>158</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczNq1P1eLhdHXEBYSCwUenbCRvmP-TUboAwHKRPR96RqzROI1ABFtaJL9IJtoZKK33KVIHTSThi72lP6UB4u4suKwYUYNcMTvpZw-oUxZKXzdsafimE=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/cruise/mardigras22')">
+                <p class="imgtitle">
+                    Mardi Gras 2022
+                </p>
+                <p class="imgdescription">
+                    Carnival cruise in the Caribbean
+                </p>
+            </div>
+            <div class="count">
+                <p>117</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczNyepKQYDKYCjoVqBA-7jSnK2BqwQdgNN6m7AdDRW3ji8dgYDRoge-rIcTiv_1ABqdXaQuHgJrSrWK7VA4185Si7g6NRf97SaX3WkZn9b4WsExjiv4=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/cruise/elation21')">
+                <p class="imgtitle">
+                    Elation 2021
+                </p>
+                <p class="imgdescription">
+                    Carnival cruise in the Caribbean
+                </p>
+            </div>
+            <div class="count">
+                <p>76</p>
+            </div>
+        </div>
+        <div class="album">
+            <image
+                src="https://lh3.googleusercontent.com/pw/AP1GczPvdrcZKq_DJeNPVfahsm36nDjHuvO5EJAJvnkwiJ8yCGaIuHirLd9lBM0abmMUZ_F7ExL1_1NPzd9nXukfq5IIr4aOfpJJLTdw3GkuDLN1ioAIgCs=w1920-h1080">
+            </image>
+            <div class="hover" onclick="redirect('https://photos.aarushmagic.com/cruise/horizon21')">
+                <p class="imgtitle">
+                    Horizon 2021
+                </p>
+                <p class="imgdescription">
+                    Carnival cruise in the Caribbean
+                </p>
+            </div>
+            <div class="count">
+                <p>69</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function redirect(url) {
+        window.location.href = url;
+    }
+</script>
